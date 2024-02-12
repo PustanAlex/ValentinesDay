@@ -1,0 +1,103 @@
+body {
+    background-image: url(../images/body-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+    color: #FF007F;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/valentines-day.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    gap: 50px;
+}
+
+h1 {
+    color: #800020;
+}
+
+
+
+
+svg {
+    fill: pink;
+    stroke: pink;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.buttons button {
+    background-color: palevioletred;
+    border: none;
+    color: darkred;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    width: 70px;
+    height: 50px;
+}
+
+
+.buttons button:hover {
+    transform: scale(2);
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: rgb(255, 105, 180, 45%)						 ;
+}
+
+
+.modal {
+    display: none;
+}
+
+.accepted {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  
+}
+
+.mini-modal {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(255, 105, 180, 75%);
+}
+#close-modal {
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+#close-modal:hover { 
+    cursor: pointer;
+}
