@@ -30,7 +30,9 @@ h2 {
 }
 
 h1 {
-    color: #800020;
+    color: pink;
+    transform: rotate(10deg);
+    padding-right: 25px;
 }
 
 
@@ -87,7 +89,10 @@ svg {
     position: relative;
     height: 50%;
     width: 50%;
-    background-color: rgb(255, 105, 180, 75%);
+    /* background-color: rgb(255, 105, 180, 75%); */
+    background-image: url(../images/gifoflove.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #close-modal {
     position: absolute;
@@ -95,7 +100,8 @@ svg {
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-color: red;
+    background-color:transparent;
+    border: 0px;
 }
 
 #close-modal:hover { 
