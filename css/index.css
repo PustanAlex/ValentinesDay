@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    gap: 100px;
     width: 100%;
 }
 
@@ -34,14 +35,6 @@ h1 {
     transform: rotate(10deg);
     padding-right: 25px;
 }
-
-.title-gif {
-  
-    position: absolute;
-    right: 0;
-    margin-right: 100px;
-}
-
 
 svg {
     fill: pink;
