@@ -34,6 +34,7 @@ h1 {
     color: pink;
     transform: rotate(10deg);
     padding-right: 25px;
+    font-size: 25px;
 }
 
 svg {
