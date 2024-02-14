@@ -52,3 +52,7 @@ const handleKeyPress = (event) => {
     }
 };
 document.addEventListener('keydown', handleKeyPress);
+
+modalWindow.addEventListener('click', () => {
+    closeModal();
+});

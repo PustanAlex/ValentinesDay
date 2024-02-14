@@ -70,8 +70,6 @@ svg {
 }
 
 
-
-
 .approval {
     display: none;
 }
@@ -139,6 +137,11 @@ svg {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.mini-modal:hover {
+    cursor: pointer;
+}
+
 #close-modal {
     position: absolute;
     right: 0px;
