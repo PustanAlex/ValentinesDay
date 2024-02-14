@@ -65,9 +65,56 @@ svg {
 .buttons button:hover {
     transform: scale(2);
     transition: transform 0.3s, background-color 0.3s;
-    background-color: rgb(255, 105, 180, 45%)						 ;
+    background-color: rgb(255, 105, 180, 45%);	
+    font-size: 22px;				 ;
 }
 
+
+
+
+.approval {
+    display: none;
+}
+
+.approve {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: rgba(0,0,0, 90%);
+    font-size: 20px;
+    padding-right: 20px;
+    color: #fff;
+    box-shadow: 3px 5px rgba(0,0,0, 70%);
+}
+
+.approve .italicyes {
+    color: red;
+}
+
+.approval-button-div {
+    display: flex;
+    gap: 30px;
+}
+
+.approval-button-div button {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.approval-button-div button:hover {
+    cursor: pointer;
+}
+
+.catgif {
+    height: 100%;
+    width: 200px;
+}
 
 .modal {
     display: none;
