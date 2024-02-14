@@ -2,7 +2,6 @@ const yesButton = document.getElementById('Yes');
 const noButton = document.getElementById('No');
 const approvalModalWindow = document.querySelector('.approval');
 const modalWindow = document.querySelector('.modal');
-const closeModalButton = document.getElementById('close-modal');
 const acceptedYesButton = document.getElementById('approve-button');
 const acceptedNoButton = document.getElementById('not-approved');
 
@@ -31,9 +30,6 @@ noButton.addEventListener('click', () => {
     }
 })
 
-closeModalButton.addEventListener('click', () => {
-    modalWindow.classList.remove('accepted');
-})
 
 acceptedYesButton.addEventListener('click', () => {
         modalWindow.classList.add('accepted');
@@ -43,3 +39,16 @@ acceptedYesButton.addEventListener('click', () => {
 acceptedNoButton.addEventListener('click', () => {
     approvalModalWindow.classList.remove('approve')
 })
+
+document.addEventListener('click', (event) => {
+    if (modalWindow.contains(event.target)) {
+        modalWindow.classList.remove('accepted'); 
+    }
+});
+
+const handleKeyPress = (event) => {
+    if (event.key === "Escape") {
+        modalWindow.classList.remove('accepted'); 
+    }
+};
+document.addEventListener('keydown', handleKeyPress);
